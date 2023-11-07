@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Zeyada&display=swap');
+
+  body {
+  background: rgb(3, 3, 35);
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 800;
+}
+
+.about-title {
+  max-height: 20vh;
+  background: rgb(228, 248, 255);
+  .about-h1 {
+    letter-spacing: 6px;
+    padding: 20px;
+    font-size: 3.3rem;
+  }
+}
+
+section {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(1){
+  color: #fff;
+}
+
+section:nth-child(2){
+  color: rgb(3, 3, 35);
+  background-color: rgb(228, 248, 255);
+}
+
+section:nth-child(3){
+  color: #fff;
+}
+
+section:nth-child(4){
+  color: rgb(3, 3, 35);
+  background-color: rgb(228, 248, 255);
+}
+
+section:nth-child(5){
+  color: #fff;
+}
+
+section:nth-child(6){
+  color: rgb(3, 3, 35);
+  background-color: rgb(228, 248, 255);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+section .cards {
+  display: flex;
+  margin-top: 2rem;
+}
+
+section .text-card {
+  padding: 10px;
+  margin: 0px 15px;
+}
+
+section .text-card p {
+  font-size: 1.2rem;
+}
+
+section .img-container #store-img {
+  height: auto;
+  width: 40rem;
+ }
+
+ section .img-container #measure-img, #open-img {
+  height: 25rem;
+  width: auto;
+  object-fit: cover;
+ }
+
+section .cards  h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 40px;
+  }
+
+  section .cards {
+    flex-direction: column;
+  }
+
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+  margin: 5rem;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

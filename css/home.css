@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Zeyada&display=swap');
+
+body{
+  background-color: rgb(228, 248, 255);
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 800;
+}
+
+.heading-line {
+    text-align: center;
+    position: relative;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: -10;
+}
+
+.heading-line:before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #01002c;
+}
+
+
+  .video-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: #14181f;
+}
+
+
+
+   video {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border: solid 1px;
+    border-color: aliceblue;
+    }
+
+    @keyframes bounceAnimation {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+        color: #acd8e6;
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .bounce {
+      display: inline-block;
+      animation: bounceAnimation 3s infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    #delivery-tag {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin: 5vh 0;
+    }
+
+    #arrivals {
+      border: solid 1px;
+      height: 100%;
+      margin-bottom: 20px;
+    }
+
+    #arrivals-p {
+      font-size: 2.5rem;
+      margin-top: 5vh;
+      font-weight: 1000;
+      display: inline-block;
+      padding: 16px;
+      background: rgb(228, 248, 255);
+      position: relative;
+      z-index: 20;
+      text-transform: uppercase;
+      max-width: 90%;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .card-main {
+      border: 1px solid #ccc;
+      margin: 20px 37px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 5px;
+      width: 15rem;
+      height: 20.5rem;
+      box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+      transition: all .3s cubic-bezier(0,0,.5,1);
+      margin: 10px 0;
+    }
+
+    .card-main:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      transform: scale(1.02);
+    }
+
+    .card-main:hover .basket-btn {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .basket-btn {
+      position: relative;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 2px 0;
+      height: 30px;
+      background: darkblue;
+      color: white;
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      border: solid 1px white
+    }
+
+    .basket-btn:hover {
+      background: darkblue;
+      transform: scale(1.02);
+    }
+
+    .card-img {
+      object-fit: cover;
+      transition: transform 0.3s;
+      width: auto;
+      height: 200px;
+    }
+
+    .card-main:hover .card-img {
+      transform: scale(1.1);
+    }
+
+    .card-text {
+      padding: 5px 10px;
+      display: inline-flex;
+      margin-top: 0;
+      padding-top: 1rem;
+      text-align: center;
+    }
+
+    .card-title {
+      display: inline-block;
+      font-size: 0.9em;
+    }
+
+    .card-brand {
+      font-size: 0.8em;
+      color: #2b2b2b;
+      line-height: 5px;
+    }
+
+    .card-price {
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-left: 7.2rem;
+      color: darkblue;
+    }
+
+
+    .banner {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      transition: 0.5s;
+      border-radius: 5px;
+    }
+
+    .banner:hover{
+      transform: scale(1.1);
+      .banner-text {
+        color: rgb(81, 116, 195);
+      }
+    }
+
+    .banner a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .banner-text {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: rgb(19, 7, 69);
+      font-size: 1.5em;
+    }
+
+    .section-reviews {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .review {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .avatar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .review-text p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .customer-name {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .review-stars {
+      letter-spacing: 3px;
+    }
+
+    #newsletter {
+      border: solid 1px #000;
+    }
+
+    .newsletter-container {
+      max-width: 100%;
+      background: rgba(1, 1, 41, 0.956);
+    }
+
+    .newsletter-text {
+      color: #fff;
+      margin-left: 2rem;
+      padding: 20px;
+    }
+
+    .newsletter-form {
+      text-align: center;
+      margin-right: 2rem;
+    }
+
+    #newsletter button {
+      background-color: darkblue;
+      color: #fff;
+      width: 9rem;
+      height: 2.7rem;
+      margin-left: 0.5rem;
+      transition: 0.4s;
+      margin-bottom: 10px;
+    }
+
+    #newsletter button:hover {
+      background-color: #297fb9;
+      cursor: pointer;
+    }
+
+    .newsletter-input {
+      color: #000000;
+      width: 20rem;
+      height: 2.7rem;
+      font-size: 1rem;
+      padding: 5px;
+    }
+
+    #newsletter p {
+      color: #bfbfbf;
+      margin-left: 2rem;
+    }
+
+    #nl-unsubscribe {
+      margin-left: -2rem !important;
+      text-align: center;
+      padding: 20px;
+    }

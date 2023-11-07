@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Zeyada&display=swap');
+
+body{
+  background-color: rgb(228, 248, 255);
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 800;
+}
+
+#blog-section {
+  background-color: rgb(228, 248, 255);
+  margin: 10px;
+}
+
+.card-img img {
+  max-width: 30rem;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.text-box {
+  border: solid 1px black;
+  max-width: 90%;
+  height: 300px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+#blog-section h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0d012e;
+  letter-spacing: 2px;
+}
+
+#blog-section p {
+  margin: 10px 0;
+  color: #010006;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
